@@ -1,0 +1,96 @@
+body {
+    background-image: url('background.jpg');
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    font-size: 3vw;
+    background-color: black;
+    padding: 4px;
+    font-family: 'Almarai';
+    border-radius: 20px;;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.text-animate {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 1.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.text-animate1 {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    font-family: 'Almarai';
+    animation:
+        typing 1.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/almarai/v5/tsstApxBaigK_hnnQ1iFow.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC, U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.image-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.text-center {
+    width: max-content;
+    margin: 40px auto 0 auto;
+    text-shadow: 2px 2px black;
+}
+
+.next {
+    background-color: black;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
